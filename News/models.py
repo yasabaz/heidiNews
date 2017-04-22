@@ -8,4 +8,4 @@ class News(models.Model):
     title=models.CharField(max_length=200,blank=False)
     link=models.URLField(blank=False)
     post_date=models.DateTimeField(blank=False)
-    category=models.ForeignKey(Category)
+    category=models.ManyToManyField(Category)
