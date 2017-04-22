@@ -1,1 +1,1 @@
-# hiediNews
+# heidiNews
