@@ -2,9 +2,8 @@
 
 
 TO DO:
+ایجاد اکشن برای هر صفحه ادمین 
 
-actions create  for admin.site
+نمایش مناسب هر مدل در صفحه ادمین 
 
-display for models in admin page 
-
-create search and filter for admin page
+ایجاد قسمت سرچ و فیلتر کردن درصفحه ادمین 
