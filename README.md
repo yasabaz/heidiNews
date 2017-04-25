@@ -1,6 +1,6 @@
 # heidiNews
 
 
-#TO DO:
-actions every admin.site
+TO DO:
+actions create  for admin.site
 display for models in admin page 
