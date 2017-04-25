@@ -23,7 +23,7 @@ class Task(models.Model):
     translator_id=models.ForeignKey(Translator)
     news_id=models.OneToOneField(News)
     time_translator=models.DateTimeField(auto_now_add=True)
-    upload=models.FileField(upload_to='article/%Y/%m/%d/',blank=False,default=path, validators=[validate_file_extension, validate_file_size])#to do 
+    upload=models.FileField(upload_to='article/%Y/%m/%d/',blank=False,default=path, validators=[validate_file_extension, validate_file_size])
     expiration_date=models.DateTimeField(blank=False)
     
     def save(self, *args, **kwargs):
