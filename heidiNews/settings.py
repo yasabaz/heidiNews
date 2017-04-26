@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'heidiNews.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'news',
-        'USER':'django_user',
-        'PASSWORD':'F+XI%*d~r0S8ZrUreGogCAzjSEz+Y(!q',
+        'NAME':'db',
+        'USER':'yasabaz',
+        'PASSWORD':')(*&',
     }
 }
 

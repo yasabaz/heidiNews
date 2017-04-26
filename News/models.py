@@ -5,7 +5,6 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-
 class News(models.Model):
     title=models.CharField(max_length=200,blank=False)
     link=models.URLField(blank=False)

@@ -3,7 +3,7 @@ from models import Task
 from News.models import News
 
 class TaskAdmin(admin.ModelAdmin):
-    list_display=('get_news_title','get_translator_name','time_translator','expiration_date')
+    list_display=('get_news_title','get_translator_name','time_translator','expiration_date','read')
 
     def get_translator_name(self,obj):
         return obj.translator_id.user_id.name + ' ' + obj.translator_id.user_id.family
