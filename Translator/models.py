@@ -1,15 +1,10 @@
 from django.db import models
-
-class user(models.Model):
-    name=models.CharField(max_length=30,blank=False)
-    family=models.CharField(max_length=30,blank=False)
-    username=models.CharField(max_length=20,blank=False)
-    password=models.CharField(max_length=20,blank=False)
-    date_register=models.DateTimeField(auto_now_add=True)
+from django.contrib.auth.models import User
 
 class Translator(models.Model):
-    user_id=models.OneToOneField(user)
-    skill=models.CharField(max_length=20)
+
+    user=models.OneToOneField(User,on_delete=models.CASCADE)
+    skill=models.CharField(max_length=25)
 
     def __str__(self):
-        return self.user_id.name
+        return self.user.username

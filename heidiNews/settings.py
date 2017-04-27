@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'News',
     'Task',
-    'Translator'
+    'Translator',
 ]
 
 MIDDLEWARE = [
@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'heidiNews.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'db',
-        'USER':'yasabaz',
+        'NAME':'newsdb',
+        'USER':'django_user',
         'PASSWORD':')(*&',
     }
 }
