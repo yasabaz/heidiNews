@@ -1,5 +1,9 @@
 # heidiNews
 
+Installations :
+------
+pip install -r reqirements.txt
+
 
 TO DO:
 
