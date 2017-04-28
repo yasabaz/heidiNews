@@ -1,0 +1,16 @@
+{% load i18n %}
+{% load bootstrap3 %}
+<div class="toggle-content text-center">
+  <div class="row">
+    <h2>Login</h2>
+  </div>
+  <div class="row">
+      <form class="form-horizontal bounded-form" action="{% url 'login' %}?next={{ next }}" method="POST" autocomplete="off">
+        {% csrf_token %}
+        {% bootstrap_form form layout='horizental' %}
+	<div style='float:right'>
+		<input class="btn btn-primary" type="submit" value="{% trans 'Submit' %}">
+	</div>
+    </div>
+  </div>
+</div>
